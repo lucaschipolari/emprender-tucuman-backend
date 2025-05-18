@@ -1,0 +1,46 @@
+{
+  "name": "emprender-tucuman-backend",
+  "version": "1.0.0",
+  "description": "Backend del proyecto Emprender Tucumán",
+  "main": "./src/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "esbuild src/index. js -- bundle -- platform=node -- outfile=dist/index. cjs -- minify",
+    "start": "node -- env-file =. env dist/index. cjs",
+    "dev": "node -- watch -- env-file =. env src/index.js",
+    "lint": "eslint . -- fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucaschipolari/emprender-tucuman-backend.git"
+  },
+  "keywords": [
+    "backend",
+    "api",
+    "tucuman",
+    "emprendimiento"
+  ],
+  "author": "Agullo Merino, Keren - Chipolari Villena, Lucas Federico - Vignoli, María Julieta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucaschipolari/emprender-tucuman-backend/issues"
+  },
+  "homepage": "https://github.com/lucaschipolari/emprender-tucuman-backend#readme",
+  "dependencies": {
+     "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "esbuild": "^0.23.1",
+    "express": "^4.19.2",
+    "http-status-codes": "^2.3.0",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.5.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.4.0"
+  }
+}
